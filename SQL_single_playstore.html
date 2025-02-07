@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<!--
+	ZeroFour by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Zach Howard</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header-->
+			<div id="header-wrapper">
+				<div class="container">
+
+					<!-- Header-->
+						<header id="header">
+							<div class="inner">
+								<!-- Logo -->
+									<h1><a id="logo">Zach Howard</a></h1>
+
+								<!-- Nav -->
+									<nav id="nav">
+										<ul>
+											<li><a href="home.html">Home</a></li>
+											<li class="current_page_item">
+												<a href="SQL_posts.html">SQL Projects</S></a>
+												<ul>
+													<li><a href="SQL_single_dacapstone.html">Google Data Capstone</a></li>
+													<li><a href="SQL_single_bikesales.html">Bike Sales</a></li>
+													<li><a href="SQL_single_fifa.html">Fifa</a></li>
+													<li><a href="SQL_single_playstore.html">Google Play Store</a></li>
+													<!--<li>
+														<a href="#">Phasellus consequat</a>
+														<ul>
+															<li><a href="#">Lorem ipsum dolor</a></li>
+															<li><a href="#">Phasellus consequat</a></li>
+															<li><a href="#">Magna phasellus</a></li>
+															<li><a href="#">Etiam dolore nisl</a></li>
+														</ul>
+													</li> -->
+												</ul>
+											</li>
+											<li>
+												<a href="Python_posts.html">Python Projects</a>
+												<ul>
+													<li><a href="Python_single_bgcalc.html">Ben Graham Calculator</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="XL_posts.html">Excel Projects</a>
+												<ul>
+													<li><a href="XL_single_stocks.html">Stock Tracker</a></li>
+												</ul>
+											</li>
+											<!-- <li><a href="left-sidebar.html">Left Sidebar</a></li>
+											<li><a href="right-sidebar.html">Right Sidebar</a></li>
+											<li><a href="no-sidebar.html">No Sidebar</a></li> -->
+										</ul>
+									</nav>
+
+							</div>
+									</header>
+		
+							</div>
+						</div>
+		
+			<!-- Main Wrapper -->
+				<div id="main-wrapper">
+					<div class="wrapper style2">
+						<div class="inner">
+							<div class="container">
+								<div id="content">
+
+									<!-- Content -->
+
+									<article>
+										<header class="major">
+											<h2>Using <a href="https://www.mysql.com/downloads/"><u>MySQL</u></a> and <a href="https://www.microsoft.com/en-US/download/details.aspx?id=58494&msockid=3d9d222d27396a7f2fed2d06261c6b2a"><u>Power BI</u></a> to clean and analyze data</a></h2>
+											<h4>data from "googleplaystore" on <a href="https://www.kaggle.com/datasets/zeshanali/googleplaystore"><u>Kaggle.com</u></a></h4>
+											<b><a href="https://github.com/zhhoward/Google-Playstore">All GitHub files for Google Play Store project</a></b>
+										</header>
+
+										<div id="main">
+											<p><b>Project Objective</b>: Choosing the type, price, & content for an App, created for the Google Play Store, based purely on the data, to maximize income off app sales.</p>
+											<p><b>Project Objective Decision</b>: I would create a Camera Filter Photography App marketed for everyone, and I would price it at $5.</p>
+											<p><b>Project Process</b>:</p>
+											<p>This data set would not import into MySQL so I used a <a href="https://www.convertcsv.com/csv-to-sql.htm"><u>CSVtoSQL Converter</u></a> to take the raw csv text and turn it into SQL statements.</p>
+											<a class="image main"><img src="images/playstore_csvtosql.PNG" alt="raw data" /></a>
+											<p>The App names had every emoji and special character possible which is why it would'nt import.</p>
+											<p><b>Raw Data Table</b></p>
+											<a class="image main"><img src="images/playstore_raw1.PNG" alt="raw data" /></a>
+											<a><img src="images/playstore_raw2.PNG" alt="raw data" /></a>
+											<a><img src="images/playstore_raw3.PNG" alt="raw data" /></a>
+											<p>I dropped a few unnecessary columns, deleted a lot of duplicates based on highest install, split the Genres column, formatted Rating column removing NaN values, formatted the size column to represent MB size as integer,
+												formatted the Installs column removing commas & plus signs, formatted Price column removing $ character, and removing all special characters and emojis from App column.
+											</p>
+											<p><b>SQL Code</b></p>
+											<a><img src="images/playstore_sql1.PNG" alt="raw data" /></a>
+											<a><img src="images/playstore_sql2.PNG" alt="raw data" /></a>
+											<a><img src="images/playstore_sql3.PNG" alt="raw data" /></a>
+											<a><img src="images/playstore_sql4.PNG" alt="raw data" /></a>
+											<a><img src="images/playstore_sql5.PNG" alt="raw data" /></a>
+											<a><img src="images/playstore_sql6.PNG" alt="raw data" /></a>
+											<a><img src="images/playstore_sql7.PNG" alt="raw data" /></a>
+											<a><img src="images/playstore_sql8.PNG" alt="raw data" /></a>
+											<a><img src="images/playstore_sql9.PNG" alt="raw data" /></a>
+											<a><img src="images/playstore_sql10.PNG" alt="raw data" /></a>
+											<p><b>Cleaned Data Table</b></p>
+											<a class="image main"><img src="images/playstore_cleaned1.PNG" alt="cleaned data" /></a>
+											<p>This is a Power BI Dashboard put together to show data I thought would be relevant to project decision.</p>
+											<a class="image main"><img src="images/playstore_finaldashboard.PNG" alt="raw data" /></a>	
+											<p>Relying on the data to decide what genre, price, & content for this App; I would create a Camera Filter Photography App marketed for everyone, and I would price it at $5.</p>
+											<p>This decision is based on the highlighted areas on the dashboard. There seems to be a correlation between price and average installs at that price. The sweet spot looks to be in the $4-$10 range,
+												after $10 mark the average install amount decreases heavily. The "Photography" Genre is the only Genre in both the top 10 for total install by genre & average price by genre. And the average price
+												for the "Photograpy" Genre is within the ideal price range. While there are some Genres that have more installs they are not on the top 10 for average price meaning they're majorily free. 
+												Looking at average installs by rating, it seems people want to download an app in the 3.7-4.5 range.
+												The "Photography" Genre has an average rating of 3.9 which falls into that range, people tend to like photography apps.
+											</p>
+											<a class="image main"><img src="images/playstore_finaldashboard_marked.PNG" alt="raw data" /></a>
+											<p>Looking further into this decision, I search for the top installed apps in the "Photography" Genre. The top apps downloaded are camera filter apps.</p>
+											<p>Conveniently enough 2 of the top 5 installed are also priced in the range I calculated would be ideal.</p>
+											<a class="image main"><img src="images/playstore_cleaned_Priceabove0.PNG" alt="cleaned data" /></a>	
+										</div>
+									</article>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div id="copyright">
+							<ul class="menu">
+								<li>Zach Howard</li><li>Template by: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
