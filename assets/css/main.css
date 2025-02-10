@@ -103,7 +103,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		font-family: 'Open Sans', sans-serif;
-		color: #7b818c;
+		color: #ffffff;
 		font-weight: 400;
 		font-size: 11pt;
 		line-height: 1.85em;
@@ -155,7 +155,7 @@ input, select, textarea {
 	}
 
 	b, strong {
-		color: #404248;
+		color: #ffffff;
 		font-weight: 700;
 	}
 
@@ -200,7 +200,7 @@ input, select, textarea {
 		font-weight: 700;
 		letter-spacing: 0.065em;
 		font-size: 0.9em;
-		color: #696969;
+		color: #ffffff;
 		margin: 0 0 0.25em 0;
 	}
 
@@ -1856,7 +1856,10 @@ input, select, textarea {
 	}
 
 	#main-wrapper {
-		background: #000000;
+		background: url("images/bg01.png"), url("../../images/header.jpg");
+		background-position: top left, center center;
+		background-size: auto, cover;
+		padding: 3em 0;
 	}
 
 	#footer-wrapper {
@@ -1872,7 +1875,7 @@ input, select, textarea {
 	}
 
 	.wrapper {
-		padding: 7em 0 7em 0;
+		padding: 1em 0 1em 0;
 	}
 
 		.wrapper > .inner {
@@ -1890,10 +1893,9 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
+			padding-top: 1%;
 			position: relative;
-			background-color: #363131;
-			background-image: url("images/overlay.png"), url("images/pic02.png");
-			background-repeat: no-repeat, repeat;
+			background-repeat: no-repeat, no-repeat, repeat;
 			background-size: 100% 15em, auto auto;
 			background-position: top center, top left;
 		}
